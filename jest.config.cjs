@@ -16,5 +16,5 @@ module.exports = {
     "^(\\.{1,2}/.*)\\.js$": "$1",
   },
   collectCoverageFrom: ["src/**/*.ts", "!src/**/*.d.ts", "!src/**/index.ts"],
-  coverageReporters: ["text", "text-summary"],
+  coverageReporters: ["text", "text-summary", "lcovonly"],
 };
