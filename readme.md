@@ -124,13 +124,13 @@ This project is ready for integration with CI/CD systems (e.g., GitHub Actions).
 
 A workflow file is included at `.github/workflows/ci.yml`.
 
-On every push or pull request to the `main` branch, the following steps are run automatically:
+On every push or pull request to the `main` and `develop` branches, the following steps are run automatically:
 
 - Install dependencies
 - Lint the code
 - Run all tests
 - Build the project
-
+- Run a SonarQube scan using the provided `sonar-project.properties` and the `SONAR_TOKEN` secret
 
 ## 👨‍💻 Author
 
