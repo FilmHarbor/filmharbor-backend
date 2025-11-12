@@ -9,6 +9,7 @@ const PORT = Number(process.env.PORT) || 5000;
   try {
     const app = new App();
     app.listen(PORT);
+    console.log("Test");
   } catch (error) {
     console.error("❌ Failed to start server:", error);
     process.exit(1);
